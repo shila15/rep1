@@ -17,12 +17,12 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[100],
+      backgroundColor: Colors.deepPurple[100],
       appBar: AppBar(
         title: Text('Book List',
-        style: TextStyle(fontSize: 22)),
+        style: TextStyle(fontSize: 30)),
         centerTitle: true,
-        backgroundColor: Colors.amber[900],
+        backgroundColor: Colors.deepPurple,
       ),
       body: ListView(
         padding: EdgeInsets.all(16.0),
@@ -31,7 +31,6 @@ class FirstPage extends StatelessWidget {
               'It tells the tragic story of Jay Gatsby, a self-made millionaire, and his pursuit of Daisy Buchanan, a wealthy young woman whom he loved in his youth',13.5),
           CardWidget('Don Quixote', 'Miguel de Cervantes', '3.8',
               'images.jpg','Don Quixote is a classic novel from 1605 which portraits the life and insightful journey of Don Quixote de la Mancha',15.6),
-
         ],
       ),
     );
@@ -51,7 +50,7 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.amber[50],
+      color: Colors.deepPurple[50],
       child: Column(
         children: [
           ListTile(
@@ -74,7 +73,7 @@ class CardWidget extends StatelessWidget {
             icon: Icon(Icons.shopping_cart),
             label: Text('Buy Now'),
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.amber[900]),
+              backgroundColor: MaterialStateProperty.all(Colors.deepPurple),
             ),
           ),
         ],
@@ -96,10 +95,10 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[50],
+      backgroundColor: Colors.deepPurple[50],
       appBar: AppBar(
         title: Text('Buy Now'),
-        backgroundColor: Colors.amber[900],
+        backgroundColor: Colors.deepPurple,
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -107,7 +106,7 @@ class SecondPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text('Book Name: $bookName\n',
-            style: TextStyle(fontSize: 22),),
+            style: TextStyle(fontSize: 24),),
             Image.asset('assets/images/$imageName'), // Replace with actual URL
             Text('\nAuthor Name: $authorName'), // Replace with actual author name
             Text('\nShort Description: $description'),
@@ -131,7 +130,7 @@ class SecondPage extends StatelessWidget {
               },
               child: Text('Go Back'),
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.amber[900]),
+                backgroundColor: MaterialStateProperty.all(Colors.deepPurple),
               ),
             ),
           ],
