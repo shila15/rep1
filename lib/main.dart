@@ -31,6 +31,8 @@ class FirstPage extends StatelessWidget {
               'It tells the tragic story of Jay Gatsby, a self-made millionaire, and his pursuit of Daisy Buchanan, a wealthy young woman whom he loved in his youth',13.5),
           CardWidget('Don Quixote', 'Miguel de Cervantes', '3.8',
               'images.jpg','Don Quixote is a classic novel from 1605 which portraits the life and insightful journey of Don Quixote de la Mancha',15.6),
+          CardWidget('To Kill a Mockingbird', 'Harper Lee', '3.1',
+              'img2.jpg','the novel is a bildungsroman, or coming-of-age story, and chronicles the childhood of Scout and Jem Finch as their father Atticus defends a Black man falsely accused of rape',14.0),
         ],
       ),
     );
